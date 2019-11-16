@@ -1,0 +1,108 @@
+body {
+  margin: 5px;
+  /* padding: 5px; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.game {
+  border: 1px solid;
+  position: relative;
+}
+
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  background-color: yellow;
+}
+
+.ball--red {
+  background-color: red;
+}
+
+.ball--green {
+  background-color: green;
+}
+
+.header {
+  opacity: 0;
+  transition: opacity 2s ease-in;
+  position: absolute;
+  min-width: 300px;
+  /* height: 100px; */
+  top: 10px;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, 0);
+  background-color: lightgray;
+}
+
+.header--in {
+  opacity: 1;
+}
+
+.header__text {
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.header__content {
+  display: flex;
+  padding: 5px;
+}
+
+.header__content input {
+  height: 35px;
+  flex: 1;
+}
+
+.header__start-button__layer-one {
+  margin-left: 10px;
+  border-radius: 8px;
+  border: black 1px solid;
+}
+
+.header__start-button__layer-two {
+  padding: 3px;
+  background-color: #bcbaba;
+  border: solid 1px white;
+  border-radius: 8px;
+}
+
+.header__start-button__button {
+  border: none;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  height: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  line-height: 25px;
+  outline: none;
+  position: relative;
+  display: block;
+  background: linear-gradient(to bottom, darkgrey, #b8b6b6 50%, #b8b8b8, #8b8c8d 50%);
+  box-shadow: 0 0 1px black;
+}
+
+.header__start-button__button::before {
+  position: absolute;
+  content: '★';
+  left: 5px;
+}
+
+.header__start-button__button::after {
+  position: absolute;
+  content: '★';
+  right: 5px;
+}
