@@ -1,4 +1,4 @@
-Simple bouncing balls, written in vanilla js 
+Simple bouncing balls
 
 ## Available Scripts
 
